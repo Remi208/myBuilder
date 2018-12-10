@@ -1,0 +1,47 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  li{
+    text-align: center;
+    &:last-child{
+      margin-right: 0;
+    }
+    &.current{
+      
+    }
+    &.prev,
+    &.next{
+      position: relative;
+      
+      &:focus,
+      &:hover{
+        
+      }
+      @include desktop-hover(){
+        
+      }
+    }
+    &.prev{
+      transform: rotateZ(180deg);
+    }
+  }
+  a,
+  span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+    transition: .3s;
+    @include desktop-hover(){
+     
+    }
+  }
+  span{
+    cursor: default;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "myBuilder",
+  "description": "Just a simple builder",
+  "main": "index.js",
+  "authors": [
+    "Remi208"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "es2015",
+    "sass",
+    "markup",
+    "jade",
+    "front-end"
+  ],
+  "homepage": "https://github.com/Remi208/myBuilder",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

@@ -1,0 +1,18 @@
+.accordion-item{
+  
+  &.active{
+    
+  }
+}
+.accordion-trigger{
+  position: relative;
+  cursor: pointer;
+}
+.accordion-content-holder{
+  height: 0;
+  overflow: hidden;
+  transition: .3s;
+}
+.accordion-content{
+  
+}

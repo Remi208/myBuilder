@@ -1,0 +1,101 @@
+html{
+  
+}
+p{
+  margin-top: 0;
+  margin-bottom: 1em;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+ol{
+  counter-reset: myCounter;
+  margin: 0 0 1em;
+  padding: 0;
+  li{
+    list-style: none;
+    margin: 0 0 1em;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  li:before {
+    counter-increment: myCounter;
+    content:counter(myCounter)'.';
+    display: inline-block;
+  }
+}
+svg{
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+}
+.video-block{
+  video{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+.wrapper{
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  // .mCSB_scrollTools .mCSB_draggerRail{
+  //   background-color: $white;
+  //   width: 4px;
+  // }
+  // .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  //   width: 4px;
+  //   border-radius: 0;
+  //   background-color: $black;
+  // }
+  // .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+  //   background-color: rgba($black, .8);
+  // }
+  // .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+  // .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+  //   background-color: rgba($black, .8);
+  // }
+  // .mCSB_scrollTools{
+  //   z-index: 2;
+  // }
+  // .mCSB_inside > .mCSB_container{
+  //   padding-bottom: 5px;
+  // }
+}
+.container{
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.iosBugFixCaret{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
